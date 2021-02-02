@@ -8,6 +8,12 @@ public class Users {
     public Users(){
 
     }
+
+    public Users(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
     public Users(int idUser, String username, String password) {
         this.idUser = idUser;
         this.username = username;

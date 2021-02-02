@@ -20,9 +20,9 @@ public class JsonWriter {
             String jsonInString  = null;
             try{
                 jsonInString = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(users);
-                logger.info("User JSON is " + jsonInString);
+                //logger.info("User JSON is " + jsonInString);
                 objectMapper.configure(SerializationFeature.INDENT_OUTPUT, true);
-                objectMapper.writeValue(new File(users.getIdUser() + "_users.json"), users);
+                //objectMapper.writeValue(new File( "src/jsonFiles/user.json"), users);
 
             }catch (JsonGenerationException e){
                 e.printStackTrace();

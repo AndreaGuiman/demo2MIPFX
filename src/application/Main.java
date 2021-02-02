@@ -14,18 +14,27 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("../fxml/sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../fxml/Login.fxml"));
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
-        Users users = new Users();
-        users.setUsername("!");
-        users.setPassword("?");
         BasicConfigurator.configure();
-        JsonWriter jsonWriter = new JsonWriter();
-        jsonWriter.writeJson(users);
-        Mapper mapper = new Mapper();
-        mapper.readJson();
+
+//        Users users = new Users();
+//        users.setUsername("!");
+//        users.setPassword("?");
+//
+//        JsonWriter jsonWriter = new JsonWriter();
+//        jsonWriter.writeJson(users);
+//        Mapper mapper = new Mapper();
+//        mapper.readJson();
+//
+//        Users users1 = new Users();
+//        users1.setUsername("xd");
+//        users1.setPassword("xd2");
+//
+//        jsonWriter.writeJson(users1);
+//        mapper.readJson();
     }
 
 
